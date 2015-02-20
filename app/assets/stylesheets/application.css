@@ -58,7 +58,7 @@ body {
 }
 .answer .player {
   float: left;
-  margin-top: 35px;
+  margin-top: 39px;
   margin-left: 15px;
 }
 .answer .question {
@@ -71,7 +71,7 @@ body {
   font-style: italic;
   color: #95a5a6;
   margin-top: 190px;
-  margin-left: -117px;
+  margin-left: -260px;
   display: none;
 }
 .answer .number {
