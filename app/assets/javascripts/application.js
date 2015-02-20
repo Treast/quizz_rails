@@ -28,9 +28,8 @@ $(document).ready(function(){
   });
 
   $(".box").click(function(){
-    console.log($(".color").attr("color"));
     $(".color").css({
-      "background-color": $(".color").attr("color")
+      "background-color": $(this).parent().find(".color").attr("color")
     });
     $(".lightbox").show();
     $(".answer-"+$(this).attr("box-id")).show();
@@ -43,12 +42,16 @@ $(document).ready(function(){
   });
 
   $(".get_colors").click(function(){
-    console.log($(this).find(".color").attr("color"));
     $(".box").each(function(){
       $(this).css({
         "background-color": $(this).parent().find(".color").attr("color")
-      });
+      })
     });
+    window.setTimeout(function(){
+      $(".box").css({
+        "background-color": "#2c3e50"
+      });
+    }, 2000);    
   });
 
 });
