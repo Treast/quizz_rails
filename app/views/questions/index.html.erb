@@ -3,10 +3,11 @@
 
 <div class="questions">
 <% @questions.each do |question| %>
+	<div class="question">
 	<div class="box" box-id="<%= nbre %>"><%= nbre %></div>
 	<div class="answer answer-<%= nbre %>">
-		<div class="color"></div>
-		<div class="player">Canartichaud</div>
+		<div class="color" color="<%= question.user.color %>"></div>
+		<div class="player"><%= question.user.username %></div>
 		<div class="close">X</div>
 		<div class="number">Question <%= nbre %></div>
 		<div class="question"><%= question.question %></div>
@@ -14,5 +15,8 @@
 		<a class="get_answer">Réponse</a>
 	</div>
 	<% nbre += 1 %>
+	</div>
 <% end %>
 </div>
+
+<a class="get_colors">Tableau avec les couleurs</a>

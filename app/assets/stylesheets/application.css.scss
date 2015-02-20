@@ -56,7 +56,7 @@ body {
     margin-left: 30px;
     height: 15px;
     width: 15px;
-    background-color: #2ecc71;
+    //background-color: #2ecc71;
   }
 
   .player {
@@ -68,7 +68,7 @@ body {
   .question {
     float: left;
     margin-top: 160px;
-    margin-left: -120px;
+    margin-left: -117px;
   }
 
   .response {
@@ -76,7 +76,7 @@ body {
     font-style: italic;
     color: #95a5a6;
     margin-top: 190px;
-    margin-left: -120px;
+    margin-left: -117px;
     display: none;
   }
 
@@ -85,7 +85,7 @@ body {
     color: #95a5a6;
     float: left;
     margin-top: 100px;
-    margin-left: -123px;
+   margin-left: -80px;
   }
 
   .get_answer {
@@ -104,4 +104,18 @@ body {
     margin-right: 10px;
     cursor: pointer;
   }
+}
+
+.question {
+  display: inline-block;
+}
+
+.get_colors {
+      float: right;
+    margin-right: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #e67e22;
+    border-radius: 4px;
+    margin-top: 235px;
 }
