@@ -1,0 +1,18 @@
+<h1>Quizz</h1>
+<% nbre = 1 %>
+
+<div class="questions">
+<% @questions.each do |question| %>
+	<div class="box" box-id="<%= nbre %>"><%= nbre %></div>
+	<div class="answer answer-<%= nbre %>">
+		<div class="color"></div>
+		<div class="player">Canartichaud</div>
+		<div class="close">X</div>
+		<div class="number">Question <%= nbre %></div>
+		<div class="question"><%= question.question %></div>
+		<div class="response"><%= question.answer %></div>
+		<a class="get_answer">Réponse</a>
+	</div>
+	<% nbre += 1 %>
+<% end %>
+</div>
