@@ -47,3 +47,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'thin'
 gem 'quiet_assets'
 gem 'simple_form'
+
+   group :production, :staging do
+      gem 'rails_12factor'
+    end*
