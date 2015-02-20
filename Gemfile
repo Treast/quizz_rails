@@ -48,6 +48,6 @@ gem 'thin'
 gem 'quiet_assets'
 gem 'simple_form'
 
-   group :production, :staging do
-      gem 'rails_12factor'
-    end*
+group :production, :staging do
+   gem 'rails_12factor'
+end
