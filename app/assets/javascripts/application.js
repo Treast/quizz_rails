@@ -23,12 +23,19 @@ $(document).ready(function(){
 
   $(".close").click(function(){
     $(".lightbox").hide();
+    $(".response").hide();
     $(this).parent().toggle();
   });
 
   $(".box").click(function(){
     $(".lightbox").show();
     $(".answer-"+$(this).attr("box-id")).show();
+  });
+
+  $(".lightbox").click(function(){
+    $(".answer").hide();
+    $(".response").hide();
+    $(".lightbox").hide();
   });
 
 });
