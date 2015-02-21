@@ -28,11 +28,13 @@ $(document).ready(function(){
   });
 
   $(".box").click(function(){
+    $(this).text('');
     $(".color").css({
       "background-color": $(this).parent().find(".color").attr("color")
     });
     $(".lightbox").show();
     $(".answer-"+$(this).attr("box-id")).show();
+
   });
 
   $(".lightbox").click(function(){
